@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>카카오톡ui클론</title>
+
+    <style>
+        * {
+            font-family: 'Gugi', cursive;
+        }
+
+        .wrap {
+            width: 480px;
+            height: 800px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            border: 1px solid #cbcbcb;
+        }
+
+        .back-image {
+            min-height: 500px;
+            background-image: url("https://file2.nocutnews.co.kr/newsroom/image/2018/10/19/20181019151238569453_6_710_473.jpg");
+            background-position: center;
+            background-size: cover;
+            color: white;
+            font-size: 16px;
+            text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .avatar-box{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            margin-top: 10px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            position: absolute;
+            top: -90px;
+            left: 165px;
+            background-image: url("https://image.ajunews.com/content/image/2021/01/12/20210112150756567882.png");
+            background-size: cover;
+        }
+
+
+        .icon-box {
+            min-height: 300px;
+            display: flex;
+            flex-direction: row;
+            font-size: 12px;
+            text-align: center;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 80px 0 80px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+    <div>
+        <div class="back-image"><p>안녕하세요 마동석입니다</p></div>
+
+    </div>
+    <div style="height: 10px" class="avatar-box">
+        <div class="avatar"></div>
+        <p class="name">마동석</p>
+    </div>
+    <div class="icon-box">
+        <div style="width: 70px;display: flex; flex-direction: column;cursor: pointer;">
+            <img src="static/chat.png" alt="이미지가 없습니다"/>
+            <span style="margin-top: 30px">나와의 채팅</span>
+        </div>
+        <div style="width:70px;display: flex;flex-direction: column;cursor: pointer">
+            <img src="static/profile.png" alt="이미지가 없습니다"/>
+            <span style="margin-top: 30px">프로필 관리</span>
+        </div>
+        <div style="width: 70px;display: flex;flex-direction: column;cursor: pointer">
+            <img src="static/story.png" alt="이미지가 없습니다"/>
+            <span style="margin-top: 30px">카카오스토리</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
